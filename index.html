@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simple</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="funci.js" defer></script>
+</head>
+<body>
+    <form>
+        <div class="Calculadora">
+            <label for="valor1">Ingrese el primer número:</label>
+            <input type="number" id="valor1" name="valor1">
+            <button type="button" onclick="limpiarCampo('valor1');">Limpiar</button>
+            <br><br>
+
+            <label for="valor2">Ingrese el segundo número:</label>
+            <input type="number" id="valor2" name="valor2">
+            <button type="button" onclick="limpiarCampo('valor2');">Limpiar</button>
+            <br><br>
+
+            <button type="button" onclick="calcular('+')">Sumar</button>
+            <button type="button" onclick="calcular('-')">Restar</button>
+            <button type="button" onclick="calcular('*')">Multiplicar</button>
+            <button type="button" onclick="calcular('/')">Dividir</button>
+            <br><br>
+
+            <p id="resultado">Resultado: </p>
+        </div>
+    </form>
+</body>
+</html>
